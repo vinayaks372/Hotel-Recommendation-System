@@ -1,0 +1,7 @@
+userid,password,phone,age,min_price,max_price,hotel1,hotel2
+Ganesh,ganesh,8797454258.0,23,2000.0,7000.0,Entire serviced apartment hosted by Wabi,Entire rental unit hosted by Team
+vinayak,vinayak,2345676543.0,22,1234.0,23456.0,Private room in rental unit hosted by Madhu,Entire apartment hosted by Hema
+soham,soham,5342245433.0,24,3000.0,6500.0,Entire serviced apartment hosted by Team,Private room in rental unit hosted by Kasper+
+Dev,dev,445647453.0,23,1500.0,4000.0,,
+Ganesh,1000.0,10000.0,2,Entire,,,
+Devendra,devendra,1234567891,23,2342.0,12345.0,,

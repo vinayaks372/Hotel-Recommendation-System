@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hotel Recommendation System</title>
+	<style>
+             body { 
+            background-image: url("static/image.jpg");
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 0.88;
+            z-index: 0.9;
+        }
+
+        h1 {
+            text-align: center;
+            color: #000000;
+            margin-top: 50px;
+            font-size: 36px;
+            font-weight: 800;
+            color: transparent;
+        }
+
+        form {
+            margin: 60px auto;
+            width: 80%;
+            max-width: 500px;
+            background-color: #db0e0e;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-image: linear-gradient(to bottom, #ffffff, #f3eeed);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        input,
+        select {
+            padding: 10px;
+            width: 100%;
+            border-radius: 5px;
+            border: 1px solid #000000;
+            background-color: #ffffff;
+            margin-bottom: 8px;
+            font-size: 16px;
+            transition: all 0.3s ease; 
+        }
+
+        input:focus,
+        select:focus {
+            border-color: #f56ec1; 
+            outline: none;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: #fff;
+            border: none; 
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #3e8e41;
+        }
+	</style>
+</head>
+<body>
+	<h1 style="color: black; font-size: 38px; font-family:Georgia, 'Times New Roman', Times, serif;">HOTEL RECOMMENDATION SYSTEM</h1>
+	<form action="/search" method="POST">
+        
+		<label for="location">Location:</label>
+		<input type="text" id="location" name="location" required><br>
+
+        <!-- <label for="default">Would you like tailored recommendations?</label>
+        <input type="text" name="default" required><br><br> -->
+        <!-- <select id="room_type" name="room_type">
+            <option value= 1>Yes</option>
+            <option value= 0>No</option>
+        </select> -->
+
+        <label for="min_price">Minimum Price:</label>
+        <input type="number" id="min_price" name="min_price" min="0"><br>
+    
+        <label for="max_price">Maximum Price:</label>
+        <input type="number" id="max_price" name="max_price" min="0"><br>
+    
+        <label for="num_guests">Number of Guests:</label>
+        <input type="number" id="num_guests" name="num_guests" min="1"><br>
+    
+        <label for="room_type">Room Type:</label>
+        <select id="room_type" name="room_type">
+            <option value="Private">Private</option>
+            <option value="Entire">Entire</option>
+            <option value="Single Room">Single Room</option>
+            <option value="Shared">Shared</option>
+            <option value="Tiny home">Tiny home</option>
+        </select><br><br>
+    
+        <input type="submit" value="Recommend">
+    </form>
+</body>
+</html>
